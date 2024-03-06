@@ -21,7 +21,6 @@ function juegoCachipun() {
         var eleccionUser = prompt("Elija piedra, papel o tijera").toLowerCase();
         //Verifica si lo ingresado es valido
         if (eleccionUser == "piedra" || eleccionUser == "papel" || eleccionUser == "tijera") {
-            alert("elegiste " + eleccionUser)
         } else {
             alert("Por favor elige una opción válida: piedra, papel o tijera.")
             return juegoCachipun();
@@ -59,7 +58,7 @@ function juegoCachipun() {
     }
     // Mostrar el resultado final de la cantidad de juegos, si perdio, gano o empato el total de veces que jugó.
     if (ganaUser > ganaMaqui) {
-        alert("¡Felicidades! Has ganado " + ganaUser + " de " + numJuegos + " partidas.");
+        alert("¡Felicidades campeón! Has ganado " + ganaUser + " de " + numJuegos + " partidas.");
     } else if (ganaUser < ganaMaqui) {
         alert("¡Lo siento! Has perdido " + ganaMaqui + " de " + numJuegos + " partidas.");
     } else {
